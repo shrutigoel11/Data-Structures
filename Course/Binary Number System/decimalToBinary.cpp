@@ -16,7 +16,6 @@ void findBinary(int n){
 
 int main()
 {
-
 int n;
 cout<<"Enter any decimal number:";
 cin>>n;
