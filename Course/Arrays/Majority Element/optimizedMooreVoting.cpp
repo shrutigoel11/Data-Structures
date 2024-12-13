@@ -16,8 +16,18 @@ int majorityElement(vector<int>& nums) { //O(n^2)
             freq--;
         }
     }
-    return ans;
-}
+
+    // if array is 1,2,3,4 moore's voting return 4 
+   int count=0;
+    for(int val:nums){
+        if(ans==val){
+            count++;
+        }
+    }
+    if(count>n/2)return ans;
+    else return -1;
+    }
+
 
 int main() {
     int n;
